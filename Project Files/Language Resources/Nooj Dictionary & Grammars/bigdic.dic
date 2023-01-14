@@ -1,0 +1,92 @@
+# NooJ V7
+# Dictionary
+#
+# Language is: ar
+#
+# Alphabetical order is not required.
+#
+# Use inflectional & derivational paradigms' description files (.nof), e.g.:
+# Special Command: #use paradigms.nof
+#
+# Special Features: +NW (non-word) +FXC (frozen expression component) +UNAMB (unambiguous lexical entry)
+#                   +FLX= (inflectional paradigm) +DRV= (derivational paradigm)
+#
+# Special Characters: '\' '"' ' ' ',' '+' '-' '#'
+#use G_grammar.nof
+#use V_grammar.nof
+
+رَأَبَ,V+TYP=Tri+RT=رأب+TR=Tr+FRM=VN0N1+RI=CHC+PT=فَعَلَ+CI=aa+FLX=aaCHC+DRV=DCHCفَعْل:FLXDRV+DRV=HDCHCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَأَدَ,V+TYP=Tri+RT=رأد+TR=Intr+FRM=VN0+RI=CHC+PT=فَعَلَ+CI=aa+FLX=aaCHC+DRV=DCHCفَعْل:FLXDRV+DRV=HDCHCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَؤُدَ,V+TYP=Tri+RT=رأد+TR=Intr+FRM=VN0+RI=CHC+PT=فَعُلَ+CI=uu+FLX=uuCHC+DRV=DCHCفُعُولَة:FLXDRV+DRV=HDCHCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+اِرْتَأَدَ,V+TYP=Qua+RT=رأد+TR=Intr+FRM=VN0+RI=CHC+PT=افْتَعَلَ++DRV=DCHCافْتِعَال:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَاءَدَ,V+TYP=Qua+RT=رأد+TR=Intr+FRM=VN0+RI=CHC+PT=تَفَاعَلَ++DRV=DCHCتَفَاعُل:FLXDRV+DRV=DCHCتَفَاعُل:MaFLXة+DRV=MiDCCCمُتَفاعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَأَّدَ,V+TYP=Qua+RT=رأد+TR=Intr+FRM=VN0+RI=CHC+PT=تَفَعَّلَ++DRV=DCHCتَفْعِيل:FLXDRV+DRV=DCHCتَفْعِيل:MaFLXة+DRV=MiDCCCمُتَفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَأْرَأَ,V+TYP=Qua+RT=رأرأ+TR=Intr+FRM=VN0+RI=HDD+PT=فَعْلَلَ++DRV=DHDDفَعْلَلَة:FLXDRV+DRV=DHDDفَعْلَلَة:MaFLXة+DRV=MiDCCCمُفَعْلَل:FLXDRV+DRV=SDHDDيّة:FLXDRV
+رَأَسَ,V+TYP=Tri+RT=رأس+TR=Tr+FRM=VN0N1+RI=CHC+PT=فَعَلَ+CI=aa+FLX=aaCHC+DRV=DCHCفِعَالَة:FLXDRV+DRV=DCHCفَعْل:FLXDRV+DRV=HDCHCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَئِسَ,V+TYP=Tri+RT=رأس+TR=Intr+FRM=VN0+RI=CHC+PT=فَعِلَ+CI=ia+FLX=iaCHC+DRV=DCHCفَعَل:FLXDRV+DRV=HDCHCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَاءَسَ,V+TYP=Qua+RT=رأس+TR=Intr+FRM=VN0+RI=CHC+PT=فَاعَلَ++DRV=DCHCمُفَاعَلَة:FLXDRV+DRV=DCHCمُفَاعَلَة:MaFLXواحدة+DRV=MiDCCCمُفاعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+اِرْتَأَسَ,V+TYP=Qua+RT=رأس+TR=Intr+FRM=VN0+RI=CHC+PT=افْتَعَلَ++DRV=DCHCافْتِعَال:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَأَّسَ,V+TYP=Qua+RT=رأس+TR=Intr+FRM=VN0+RI=CHC+PT=تَفَعَّلَ++DRV=DCHCتَفْعِيل:FLXDRV+DRV=DCHCتَفْعِيل:MaFLXة+DRV=MiDCCCمُتَفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَأَفَ,V+TYP=Tri+RT=رأف+TR=Intr+FRM=VN0+RI=CHC+PT=فَعَلَ+CI=aa+FLX=aaCHC+DRV=DCHCفَعْل:FLXDRV+DRV=HDCHCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَئِفَ,V+TYP=Tri+RT=رأف+TR=Intr+FRM=VN0+RI=CHC+PT=فَعِلَ+CI=ia+FLX=iaCHC+DRV=DCHCفَعَل:FLXDRV+DRV=HDCHCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَؤُفَ,V+TYP=Tri+RT=رأف+TR=Intr+FRM=VN0+RI=CHC+PT=فَعُلَ+CI=uu+FLX=uuCHC+DRV=DCHCفَعَالَة:FLXDRV+DRV=HDCHCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+أَرْأَلَ,V+TYP=Qua+RT=رأل+TR=Intr+FRM=VN0+RI=CHC+PT=أَفْعَلَ++DRV=DCHCإِفْعَال:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمُفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَاءَلَ,V+TYP=Qua+RT=رأل+TR=Intr+FRM=VN0+RI=CHC+PT=فَاعَلَ++DRV=DCHCمُفَاعَلَة:FLXDRV+DRV=DCHCمُفَاعَلَة:MaFLXواحدة+DRV=MiDCCCمُفاعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+اِسْتَرْأَلَ,V+TYP=Qua+RT=رأل+TR=Tr+FRM=VN0N1+RI=HCC+PT=اسْتَفْعَلَ++DRV=DHCCاسْتِفْعَال:FLXDRV+DRV=DHCCاسْتِفْعَال:MaFLXة+DRV=MiDHCCمُسْتَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَأَمَ,V+TYP=Tri+RT=رأم+TR=Tr+FRM=VN0N1+RI=CHC+PT=فَعَلَ+CI=aa+FLX=aaCHC+DRV=DCHCفَعْل:FLXDRV+DRV=HDCHCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَئِمَ,V+TYP=Tri+RT=رأم+TR=Tr+FRM=VN0N1+RI=CHC+PT=فَعِلَ+CI=ia+FLX=iaCHC+DRV=DCHCفِعْلَان:FLXDRV+DRV=DCHCفَعَلَان:FLXDRV+DRV=DCHCفَعَل:FLXDRV+DRV=HDCHCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+أَرْأمَ,V+TYP=Qua+RT=رأم+TR=Tr+FRM=VN0N1+RI=CHC+PT=أَفْعَلَ++DRV=DCHCإِفْعَال:FLXDRV+DRV=DCHCإِفْعَال:MaFLXة+DRV=MiDCCCمُفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَاءَمَ,V+TYP=Qua+RT=رأم+TR=Tr+FRM=VN0N1+RI=CHC+PT=فَاعَلَ++DRV=DCHCمُفَاعَلَة:FLXDRV+DRV=DCHCمُفَاعَلَة:MaFLXواحدة+DRV=MiDCCCمُفاعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَأَّمَ,V+TYP=Qua+RT=رأم+TR=Intr+FRM=VN0+RI=CHC+PT=تَفَاعَلَ++DRV=DCHCتَفَاعُل:FLXDRV+DRV=DCHCتَفَاعُل:MaFLXة+DRV=MiDCCCمُتَفاعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَأَى,V+TYP=Qua+RT=رأي+TR=Tr+FRM=VN0N1+RI=CHY+PT=فَعَلَ++DRV=DCHYفَعْل:FLXDRV+DRV=DCHYفُعْلَة:FLXDRV+DRV=MiDCCYمَفْعَل:FLXDRV+DRV=SDCCYيّة:FLXDRV
+رَاءَى,V+TYP=Qua+RT=رأي+TR=Tr+FRM=VN0N1+RI=CHY+PT=فَاعَلَ++DRV=DCHYمُفَاعَلَة:FLXDRV+DRV=DCHYفِعَال:FLXDRV+DRV=MiDCCYمُفاعَل:FLXDRV+DRV=SDCCYيّة:FLXDRV
+اِرْتَأَى,V+TYP=Qua+RT=رأي+TR=Intr+FRM=VN0+RI=CHY+PT=افْتَعَلَ++DRV=DCHYافْتِعَال:FLXDRV+DRV=SDCCYيّة:FLXDRV
+تَرَاءَى,V+TYP=Qua+RT=رأي+TR=Intr+FRM=VN0+RI=CHY+PT=تَفَاعَلَ++DRV=DCHYتَفَاعُل:FLXDRV+DRV=DCHCتَفَاعُل:MaFLXة+DRV=MiDCCYمُتَفاعَل:FLXDRV+DRV=SDCCYيّة:FLXDRV
+تَرَأَّى,V+TYP=Qua+RT=رأي+TR=Intr+FRM=VN0+RI=CHY+PT=تَفَعَّلَ++DRV=DCHYتَفْعِيل:FLXDRV+DRV=DCHCتَفْعِيل:MaFLXة+DRV=MiDCCYمُتَفَعَّل:FLXDRV+DRV=SDCCYيّة:FLXDRV
+اِسْتَرْأَى,V+TYP=Qua+RT=رأي+TR=Intr+FRM=VN0+RI=HCY+PT=اسْتَفْعَلَ++DRV=DHCYاسْتِفْعَال:FLXDRV+DRV=DHCYاسْتِفْعَال:MaFLXة+DRV=MiDHCYمُسْتَفْعَل:FLXDRV+DRV=SDCCYيّة:FLXDRV
+رَبَأَ,V+TYP=Tri+RT=ربأ+TR=Tr+FRM=VN0N1+RI=CCH+PT=فَعَلَ+CI=aa+FLX=aaCCH+DRV=DCCHفَعْل:FLXDRV+DRV=HDCCHفِعْلَة:FLXDRV+DRV=MaDCCHفَعْلَة:FLXDRV+DRV=SDCCHيّة:FLXDRV
+اِرْتَبَأَ,V+TYP=Qua+RT=ربأ+TR=Intr+FRM=VN0+RI=CCH+PT=افْتَعَلَ++DRV=DCCHافْتِعَال:FLXDRV+DRV=SDCCHيّة:FLXDRV
+رَبَّ,V+TYP=Qua+RT=ربب+TR=Tr+FRM=VN0N1+RI=CDD+PT=فَعَلَ++DRV=DCDDفَعَل:FLXDRV+DRV=MiDCDDمُفَعَّل:FLXDRV+DRV=SDCDDيّة:FLXDRV
+رَبَّبَ,V+TYP=Qua+RT=ربب+TR=Intr+FRM=VN0+RI=ccc+PT=فَعَّلَ++DRV=Dcccتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَبَّبَ,V+TYP=Qua+RT=ربب+TR=Intr+FRM=VN0+RI=ccct+PT=تَفَعَّلَ++DRV=Dccctتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُتَفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبَتَ,V+TYP=Tri+RT=ربت+TR=Tr+FRM=VN0N1+RI=CCT+PT=فَعَلَ+CI=ai+FLX=aiCCT+DRV=DCCTفَعْل:FLXDRV+DRV=HDCCTفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبِتَ,V+TYP=Tri+RT=ربت+TR=Intr+FRM=VN0+RI=CCT+PT=فَعِلَ+CI=ia+FLX=iaCCT+DRV=DCCTفَعَل:FLXDRV+DRV=HDCCTفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبَّتَ,V+TYP=Qua+RT=ربت+TR=Tr+FRM=VN0N1+RI=CDT+PT=فَعَّلَ++DRV=DCDTتَفْعِيل:FLXDRV+DRV=DCDTتَفْعِيل:MaFLXة+DRV=MiDCCCمُفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبَثَ,V+TYP=Tri+RT=ربث+TR=Tr+FRM=VN0N1+RI=CCC+PT=فَعَلَ+CI=au+FLX=auCCC+DRV=DCCCفَعْل:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبَّثَ,V+TYP=Qua+RT=ربث+TR=Tr+FRM=VN0N1+RI=ccc+PT=فَعَّلَ++DRV=Dcccتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+اِرْتَبَثَ,V+TYP=Qua+RT=ربث+TR=Intr+FRM=VN0+RI=ccc+PT=افْتَعَلَ++DRV=Dcccافْتِعَال:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَبَّثَ,V+TYP=Qua+RT=ربث+TR=Intr+FRM=VN0+RI=ccct+PT=تَفَعَّلَ++DRV=Dccctتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُتَفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبُجَ,V+TYP=Tri+RT=ربج+TR=Intr+FRM=VN0+RI=CCC+PT=فَعُلَ+CI=uu+FLX=uuCCC+DRV=DCCCفَعَالَة:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+أَرْبَجَ,V+TYP=Qua+RT=ربج+TR=Intr+FRM=VN0+RI=ccc+PT=أَفْعَلَ++DRV=Dcccإِفْعَال:FLXDRV+DRV=Dcccإِفْعَال:MaFLXة+DRV=MiDCCCمُفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَبَّجَ,V+TYP=Qua+RT=ربج+TR=Intr+FRM=VN0+RI=ccct+PT=تَفَعَّلَ++DRV=Dccctتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُتَفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبِحَ,V+TYP=Tri+RT=ربح+TR=Intr+FRM=VN0+RI=CCC+PT=فَعِلَ+CI=ia+FLX=iaCCC+DRV=DCCCفِعْل:FLXDRV+DRV=DCCCفَعَل:FLXDRV+DRV=DCCCفَعَال:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+أَرْبَحَ,V+TYP=Qua+RT=ربح+TR=Intr+FRM=VN0+RI=ccc+PT=أَفْعَلَ++DRV=Dcccإِفْعَال:FLXDRV+DRV=Dcccإِفْعَال:MaFLXة+DRV=MiDCCCمُفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَابَحَ,V+TYP=Qua+RT=ربح+TR=Tr+FRM=VN0N1+RI=ccc+PT=فَاعَلَ++DRV=Dcccمُفَاعَلَة:FLXDRV+DRV=Dcccمُفَاعَلَة:MaFLXواحدة+DRV=MiDCCCمُفاعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَبَّحَ,V+TYP=Qua+RT=ربح+TR=Intr+FRM=VN0+RI=ccct+PT=تَفَعَّلَ++DRV=Dccctتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُتَفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبِخَ,V+TYP=Tri+RT=ربج+TR=Intr+FRM=VN0+RI=CCC+PT=فَعِلَ+CI=ia+FLX=iaCCC+DRV=DCCCفَعَل:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+أَرْبَخَ,V+TYP=Qua+RT=ربج+TR=Intr+FRM=VN0+RI=ccc+PT=أَفْعَلَ++DRV=Dcccإِفْعَال:FLXDRV+DRV=Dcccإِفْعَال:MaFLXة+DRV=MiDCCCمُفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَبَّخَ,V+TYP=Qua+RT=ربج+TR=Intr+FRM=VN0+RI=ccct+PT=تَفَعَّلَ++DRV=Dccctتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُتَفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبَدَ,V+TYP=Tri+RT=ربد+TR=Tr+FRM=VN0N1+RI=CCC+PT=فَعَلَ+CI=au+FLX=auCCC+DRV=DCCCفَعْل:FLXDRV+DRV=DCCCفُعُول:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبِدَ,V+TYP=Tri+RT=ربد+TR=Intr+FRM=VN0+RI=CCC+PT=فَعِلَ+CI=ia+FLX=iaCCC+DRV=DCCCفُعْلَة:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَبَّدَ,V+TYP=Qua+RT=ربد+TR=Intr+FRM=VN0+RI=ccct+PT=تَفَعَّلَ++DRV=Dccctتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُتَفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبِذَ,V+TYP=Tri+RT=ربذ+TR=Intr+FRM=VN0+RI=CCC+PT=فَعِلَ+CI=ia+FLX=iaCCC+DRV=DCCCفَعَل:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+أَرْبَذَ,V+TYP=Qua+RT=ربذ+TR=Tr+FRM=VN0N1+RI=ccc+PT=أَفْعَلَ++DRV=Dcccإِفْعَال:FLXDRV+DRV=Dcccإِفْعَال:MaFLXة+DRV=MiDCCCمُفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبُزَ,V+TYP=Tri+RT=ربز+TR=Intr+FRM=VN0+RI=CCC+PT=فَعُلَ+CI=uu+FLX=uuCCC+DRV=DCCCفَعَالَة:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+اِرْتَبَزَ,V+TYP=Qua+RT=ربز+TR=Intr+FRM=VN0+RI=ccc+PT=افْتَعَلَ++DRV=Dcccافْتِعَال:FLXDRV+DRV=SDCCCيّة:FLXDRV
+اِرْتَبَسَ,V+TYP=Qua+RT=ربس+TR=Intr+FRM=VN0+RI=ccc+PT=افْتَعَلَ++DRV=Dcccافْتِعَال:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَبَّسَ,V+TYP=Qua+RT=ربس+TR=Intr+FRM=VN0+RI=ccct+PT=تَفَعَّلَ++DRV=Dccctتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُتَفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبِشَ,V+TYP=Tri+RT=ربش+TR=Intr+FRM=VN0+RI=CCC+PT=فَعِلَ+CI=ia+FLX=iaCCC+DRV=DCCCفَعَل:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+أَرْبَشَ,V+TYP=Qua+RT=ربش+TR=Intr+FRM=VN0+RI=ccc+PT=أَفْعَلَ++DRV=Dcccإِفْعَال:FLXDRV+DRV=Dcccإِفْعَال:MaFLXة+DRV=MiDCCCمُفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبَضَ,V+TYP=Tri+RT=ربض+TR=Tr+FRM=VN0N1+RI=CCC+PT=فَعَلَ+CI=au+FLX=auCCC+DRV=DCCCفَعْل:FLXDRV+DRV=DCCCفُعُول:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+أَرْبَضَ,V+TYP=Qua+RT=ربض+TR=Intr+FRM=VN0+RI=ccc+PT=أَفْعَلَ++DRV=Dcccإِفْعَال:FLXDRV+DRV=Dcccإِفْعَال:MaFLXة+DRV=MiDCCCمُفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبَّضَ,V+TYP=Qua+RT=ربض+TR=Tr+FRM=VN0N1+RI=ccc+PT=فَعَّلَ++DRV=Dcccتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَبَّضَ,V+TYP=Qua+RT=ربض+TR=Intr+FRM=VN0+RI=ccct+PT=تَفَعَّلَ++DRV=Dccctتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُتَفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبَطَ,V+TYP=Tri+RT=ربط+TR=Tr+FRM=VN0N1+RI=CCC+PT=فَعَلَ+CI=au+FLX=auCCC+DRV=DCCCفِعَالَة:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبَطَ,V+TYP=Tri+RT=ربط+TR=Tr+FRM=VN0N1+RI=CCC+PT=فَعَلَ+CI=au+FLX=auCCC+DRV=DCCCفَعْل:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَابَطَ,V+TYP=Qua+RT=ربط+TR=Intr+FRM=VN0+RI=ccc+PT=فَاعَلَ++DRV=Dcccمُفَاعَلَة:FLXDRV+DRV=Dcccفِعَال:FLXDRV+DRV=Dcccمُفَاعَلَة+DRV=Dcccفِعَال:MaFLXواحدة+DRV=MiDCCCمُفاعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+اِرْتَبَطَ,V+TYP=Qua+RT=ربط+TR=Intr+FRM=VN0+RI=ccc+PT=افْتَعَلَ++DRV=Dcccافْتِعَال:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبَعَ,V+TYP=Tri+RT=ربع+TR=Tr+FRM=VN0N1+RI=CCC+PT=فَعَلَ+CI=aa+FLX=aaCCC+DRV=DCCCفُعُول:FLXDRV+DRV=HDCCCفِعْلَة:FLXDRV+DRV=MaDCCCفَعْلَة:FLXDRV+DRV=MiDCCCمَفْعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَابَعَ,V+TYP=Qua+RT=ربع+TR=Tr+FRM=VN0N1+RI=ccc+PT=فَاعَلَ++DRV=Dcccفِعَال:FLXDRV+DRV=Dcccفِعَال:MaFLXواحدة+DRV=MiDCCCمُفاعَل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+رَبَّعَ,V+TYP=Qua+RT=ربع+TR=Tr+FRM=VN0N1+RI=ccc+PT=فَعَّلَ++DRV=Dcccتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV
+اِرْتَبَعَ,V+TYP=Qua+RT=ربع+TR=Intr+FRM=VN0+RI=ccc+PT=افْتَعَلَ++DRV=Dcccافْتِعَال:FLXDRV+DRV=SDCCCيّة:FLXDRV
+تَرَبَّعَ,V+TYP=Qua+RT=ربع+TR=Tr+FRM=VN0N1+RI=ccct+PT=تَفَعَّلَ++DRV=Dccctتَفْعِيل:FLXDRV+DRV=Dcccتَفْعِيل:MaFLXة+DRV=MiDCCCمُتَفَعَّل:FLXDRV+DRV=SDCCCيّة:FLXDRV

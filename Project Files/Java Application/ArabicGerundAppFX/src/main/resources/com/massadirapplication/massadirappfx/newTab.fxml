@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckComboBox?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+
+<Tab fx:id="newTab" text="Scanned File Name" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.massadirapplication.massadirappfx.NewTabController">
+   <content>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <children>
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <ToolBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" BorderPane.alignment="CENTER">
+                     <items>
+                        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="244.0" spacing="4.0">
+                           <children>
+                              <CustomTextField fx:id="searchBar" alignment="CENTER" prefHeight="25.0" prefWidth="223.0" promptText="Search..." />
+                              <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" defaultButton="true" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" textAlignment="CENTER">
+                                 <graphic>
+                                    <ImageView blendMode="MULTIPLY" fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@media/searchIcon.gif" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </HBox>
+                        <CheckComboBox fx:id="rootBox" nodeOrientation="LEFT_TO_RIGHT" title="Root" />
+                        <CheckComboBox fx:id="rootTypeBox" layoutX="232.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="98.0" title="Root Type" />
+                        <CheckComboBox fx:id="typeBox" nodeOrientation="LEFT_TO_RIGHT" title="Verb Type" />
+                        <CheckComboBox fx:id="patternBox" layoutX="332.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" title="Verb Pattern" />
+                        <CheckComboBox fx:id="tranBox" layoutX="506.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" title="Verb Transitivity" />
+                     </items>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </ToolBar>
+               </top>
+               <center>
+                  <SplitPane dividerPositions="0.35" BorderPane.alignment="CENTER">
+                     <items>
+                        <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab closable="false" text="Search &amp; Filter">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Accordion layoutX="-35.0" layoutY="43.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <panes>
+                                                <TitledPane text="Verb to Gerund">
+                                                   <content>
+                                                      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                         <children>
+                                                            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <VBox alignment="CENTER">
+                                                                     <children>
+                                                                        <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Verb:">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                           <VBox.margin>
+                                                                              <Insets left="20.0" right="20.0" />
+                                                                           </VBox.margin>
+                                                                        </Label>
+                                                                        <VBox>
+                                                                           <children>
+                                                                              <CustomTextField fx:id="verbInputField_V2G" alignment="CENTER" prefHeight="33.0" prefWidth="162.0" promptText="Verb..." />
+                                                                              <Button fx:id="button_V2G" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#verbToGerund" prefHeight="33.0" prefWidth="36.0" text="Verb to Gerund" textAlignment="CENTER" textOverrun="CLIP">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <VBox.margin>
+                                                                                    <Insets top="5.0" />
+                                                                                 </VBox.margin>
+                                                                              </Button>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets left="20.0" right="20.0" />
+                                                                           </VBox.margin>
+                                                                        </VBox>
+                                                                     </children>
+                                                                     <VBox.margin>
+                                                                        <Insets />
+                                                                     </VBox.margin>
+                                                                  </VBox>
+                                                                  <ImageView blendMode="MULTIPLY" fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@media/dropIcon.gif" />
+                                                                     </image>
+                                                                     <VBox.margin>
+                                                                        <Insets bottom="15.0" top="15.0" />
+                                                                     </VBox.margin>
+                                                                  </ImageView>
+                                                                  <VBox alignment="CENTER">
+                                                                     <children>
+                                                                        <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Orignal gerund:">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                           <VBox.margin>
+                                                                              <Insets left="20.0" right="20.0" />
+                                                                           </VBox.margin>
+                                                                        </Label>
+                                                                        <VBox>
+                                                                           <children>
+                                                                              <CustomTextField fx:id="gerundMainOutputField_V2G" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="162.0" promptText="Gerund..." />
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets left="20.0" right="20.0" />
+                                                                           </VBox.margin>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <Line endX="137.5" layoutX="117.0" layoutY="79.0" startX="-65.0">
+                                                                     <VBox.margin>
+                                                                        <Insets top="30.0" />
+                                                                     </VBox.margin>
+                                                                  </Line>
+                                                                  <VBox alignment="CENTER" layoutX="10.0" layoutY="258.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                                     <children>
+                                                                        <HBox alignment="CENTER">
+                                                                           <children>
+                                                                              <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="115.0" text="Original verb:">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </Label>
+                                                                              <CustomTextField fx:id="verbOutputField_V2G" alignment="CENTER" editable="false" promptText="Verb">
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" right="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </CustomTextField>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" layoutX="10.0" layoutY="55.0">
+                                                                           <children>
+                                                                              <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="115.0" text="Root:">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </Label>
+                                                                              <CustomTextField fx:id="rootOutputField_V2G" alignment="CENTER" editable="false" promptText="Root">
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" right="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </CustomTextField>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets top="10.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER">
+                                                                           <children>
+                                                                              <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="115.0" text="Root Type:">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </Label>
+                                                                              <CustomTextField fx:id="rootTypeOutputField_V2G" alignment="CENTER" editable="false" promptText="Root Type">
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" right="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </CustomTextField>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets top="10.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                        <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="90.0">
+                                                                           <children>
+                                                                              <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="115.0" text="Pattern:">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </Label>
+                                                                              <CustomTextField fx:id="patternOutputField_V2G" alignment="CENTER" editable="false" promptText="Pattern">
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" right="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </CustomTextField>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets top="10.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" layoutX="10.0" layoutY="125.0">
+                                                                           <children>
+                                                                              <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="115.0" text="Transitivity:">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </Label>
+                                                                              <CustomTextField fx:id="tranOutputField_V2G" alignment="CENTER" editable="false" promptText="Transitivity">
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" right="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </CustomTextField>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets top="10.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                     </children>
+                                                                     <VBox.margin>
+                                                                        <Insets top="20.0" />
+                                                                     </VBox.margin>
+                                                                  </VBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </TitledPane>
+                                                <TitledPane expanded="false" text="Gerund to Verb">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <VBox alignment="CENTER">
+                                                                     <children>
+                                                                        <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Gerund:">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                           <VBox.margin>
+                                                                              <Insets left="20.0" right="20.0" />
+                                                                           </VBox.margin>
+                                                                        </Label>
+                                                                        <VBox>
+                                                                           <children>
+                                                                              <CustomTextField fx:id="gerundInputField_G2V" alignment="CENTER" prefHeight="33.0" prefWidth="162.0" promptText="Gerund..." />
+                                                                              <Button fx:id="button_G2V" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#gerundToVerb" prefHeight="33.0" prefWidth="36.0" text="Gerund to Verb" textAlignment="CENTER" textOverrun="CLIP">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <VBox.margin>
+                                                                                    <Insets top="5.0" />
+                                                                                 </VBox.margin>
+                                                                              </Button>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets left="20.0" right="20.0" />
+                                                                           </VBox.margin>
+                                                                        </VBox>
+                                                                     </children>
+                                                                     <VBox.margin>
+                                                                        <Insets />
+                                                                     </VBox.margin>
+                                                                  </VBox>
+                                                                  <ImageView blendMode="MULTIPLY" fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@media/dropIcon.gif" />
+                                                                     </image>
+                                                                     <VBox.margin>
+                                                                        <Insets bottom="15.0" top="15.0" />
+                                                                     </VBox.margin>
+                                                                  </ImageView>
+                                                                  <VBox alignment="CENTER">
+                                                                     <children>
+                                                                        <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Original verb:">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                           <VBox.margin>
+                                                                              <Insets left="20.0" right="20.0" />
+                                                                           </VBox.margin>
+                                                                        </Label>
+                                                                        <VBox>
+                                                                           <children>
+                                                                              <CustomTextField fx:id="verbMainOutputField_G2V" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="162.0" promptText="Verb..." />
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets left="20.0" right="20.0" />
+                                                                           </VBox.margin>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <Line endX="137.5" layoutX="117.0" layoutY="79.0" startX="-65.0">
+                                                                     <VBox.margin>
+                                                                        <Insets top="30.0" />
+                                                                     </VBox.margin>
+                                                                  </Line>
+                                                                  <VBox alignment="CENTER" layoutX="10.0" layoutY="258.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                                     <children>
+                                                                        <HBox alignment="CENTER">
+                                                                           <children>
+                                                                              <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="115.0" text="Verb:">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </Label>
+                                                                              <CustomTextField fx:id="verbOutputField_G2V" alignment="CENTER" editable="false" promptText="Verb">
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" right="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </CustomTextField>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" layoutX="10.0" layoutY="55.0">
+                                                                           <children>
+                                                                              <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="115.0" text="Root:">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </Label>
+                                                                              <CustomTextField fx:id="rootOutputField_G2V" alignment="CENTER" editable="false" promptText="Root">
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" right="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </CustomTextField>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets top="10.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER">
+                                                                           <children>
+                                                                              <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="115.0" text="Root Type:">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </Label>
+                                                                              <CustomTextField fx:id="rootTypeOutputField_G2V" alignment="CENTER" editable="false" promptText="Root Type">
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" right="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </CustomTextField>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets top="10.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                        <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="90.0">
+                                                                           <children>
+                                                                              <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="115.0" text="Pattern:">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </Label>
+                                                                              <CustomTextField fx:id="patternOutputField_G2V" alignment="CENTER" editable="false" promptText="Pattern">
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" right="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </CustomTextField>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets top="10.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" layoutX="10.0" layoutY="125.0">
+                                                                           <children>
+                                                                              <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="115.0" text="Transitivity:">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </Label>
+                                                                              <CustomTextField fx:id="tranOutputField_G2V" alignment="CENTER" editable="false" promptText="Transitivity">
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" right="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </CustomTextField>
+                                                                           </children>
+                                                                           <VBox.margin>
+                                                                              <Insets top="10.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                     </children>
+                                                                     <VBox.margin>
+                                                                        <Insets top="20.0" />
+                                                                     </VBox.margin>
+                                                                  </VBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </TitledPane>
+                                             </panes>
+                                          </Accordion>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Transform Phrase">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label alignment="CENTER" blendMode="SRC_ATOP" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="48.0" prefWidth="247.0" text="VERB PHRASE -&gt; NOUN PHRASE" textAlignment="CENTER" textFill="#3d64ff">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Line endX="137.5" startX="-65.0">
+                                                   <VBox.margin>
+                                                      <Insets bottom="30.0" top="10.0" />
+                                                   </VBox.margin>
+                                                </Line>
+                                                <VBox alignment="CENTER">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Verb Phrase:">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets left="20.0" right="20.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <VBox>
+                                                         <children>
+                                                            <CustomTextField fx:id="vpInputField_VP2NP" alignment="CENTER" prefHeight="33.0" prefWidth="162.0" promptText="Verb Phrase..." />
+                                                            <Button fx:id="button_VP2NP" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#verbPhraseToNounPhrase" prefHeight="33.0" prefWidth="36.0" text="GO" textAlignment="CENTER" textOverrun="CLIP">
+                                                               <font>
+                                                                  <Font size="11.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets top="5.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets left="20.0" right="20.0" />
+                                                         </VBox.margin>
+                                                      </VBox>
+                                                   </children>
+                                                </VBox>
+                                                <ImageView blendMode="MULTIPLY" fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@media/dropIcon.gif" />
+                                                   </image>
+                                                   <VBox.margin>
+                                                      <Insets bottom="15.0" top="15.0" />
+                                                   </VBox.margin>
+                                                </ImageView>
+                                                <VBox alignment="CENTER">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Noun Phrase:">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets left="20.0" right="20.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <VBox>
+                                                         <children>
+                                                            <CustomTextField fx:id="npOutputField_VP2NP" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="162.0" promptText="Noun Phrase..." />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets left="20.0" right="20.0" />
+                                                         </VBox.margin>
+                                                      </VBox>
+                                                   </children>
+                                                </VBox>
+                                                <Line endX="137.5" layoutX="117.0" layoutY="79.0" startX="-65.0">
+                                                   <VBox.margin>
+                                                      <Insets top="30.0" />
+                                                   </VBox.margin>
+                                                </Line>
+                                                <VBox alignment="CENTER" layoutX="10.0" layoutY="258.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                   <children>
+                                                      <HBox alignment="CENTER">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="41.0" text="Verb:">
+                                                               <font>
+                                                                  <Font size="11.0" />
+                                                               </font>
+                                                               <HBox.margin>
+                                                                  <Insets left="20.0" />
+                                                               </HBox.margin>
+                                                            </Label>
+                                                            <CustomTextField fx:id="verbOutputField_VP2NP" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="145.0" promptText="Verb">
+                                                               <HBox.margin>
+                                                                  <Insets left="20.0" right="20.0" />
+                                                               </HBox.margin>
+                                                            </CustomTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="55.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="41.0" text="Root:">
+                                                               <font>
+                                                                  <Font size="11.0" />
+                                                               </font>
+                                                               <HBox.margin>
+                                                                  <Insets left="20.0" />
+                                                               </HBox.margin>
+                                                            </Label>
+                                                            <CustomTextField fx:id="rootOutputField_VP2NP" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="145.0" promptText="Root">
+                                                               <HBox.margin>
+                                                                  <Insets left="20.0" right="20.0" />
+                                                               </HBox.margin>
+                                                            </CustomTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="10.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="41.0" text="Pattern:">
+                                                               <font>
+                                                                  <Font size="11.0" />
+                                                               </font>
+                                                               <HBox.margin>
+                                                                  <Insets left="20.0" />
+                                                               </HBox.margin>
+                                                            </Label>
+                                                            <CustomTextField fx:id="patternOutputField_VP2NP" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="145.0" promptText="Pattern">
+                                                               <HBox.margin>
+                                                                  <Insets left="20.0" right="20.0" />
+                                                               </HBox.margin>
+                                                            </CustomTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="10.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="125.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="61.0" text="Transitivity:">
+                                                               <font>
+                                                                  <Font size="11.0" />
+                                                               </font>
+                                                               <HBox.margin>
+                                                                  <Insets left="20.0" />
+                                                               </HBox.margin>
+                                                            </Label>
+                                                            <CustomTextField fx:id="tranOutputField_VP2NP" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="145.0" promptText="Transitivity">
+                                                               <HBox.margin>
+                                                                  <Insets right="20.0" />
+                                                               </HBox.margin>
+                                                            </CustomTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="10.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="41.0" text="Gerund:">
+                                                               <font>
+                                                                  <Font size="11.0" />
+                                                               </font>
+                                                               <HBox.margin>
+                                                                  <Insets left="20.0" />
+                                                               </HBox.margin>
+                                                            </Label>
+                                                            <CustomTextField fx:id="gerundOutputField_VP2NP" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="145.0" promptText="Gerund">
+                                                               <HBox.margin>
+                                                                  <Insets left="20.0" right="20.0" />
+                                                               </HBox.margin>
+                                                            </CustomTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="10.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="20.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                        <SplitPane dividerPositions="0.45660377358490567" orientation="VERTICAL" prefHeight="508.0" prefWidth="600.0">
+                           <items>
+                              <TextArea fx:id="newTab_TextArea" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" wrapText="true">
+                                 <font>
+                                    <Font name="Leelawadee UI" size="15.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </TextArea>
+                              <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" tableMenuButtonVisible="true" />
+                           </items>
+                        </SplitPane>
+                     </items>
+                  </SplitPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </content>
+   <graphic>
+      <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@media/fileIcon2.png" />
+         </image>
+      </ImageView>
+   </graphic>
+</Tab>

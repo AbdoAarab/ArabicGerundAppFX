@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Tab fx:id="newTab" text="Scanned File Name" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.massadirapplication.massadirappfx.NewTabController">
+   <content>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <children>
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <ToolBar>
+                     <items>
+                        <Button mnemonicParsing="false" text="Button" />
+                        <ComboBox prefWidth="150.0" />
+                        <HBox spacing="2.0">
+                           <children>
+                              <TextField alignment="TOP_CENTER" prefHeight="25.0" prefWidth="183.0" promptText="Search..." />
+                              <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" defaultButton="true" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" textAlignment="CENTER">
+                                 <graphic>
+                                    <ImageView blendMode="MULTIPLY" fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@media/searchIcon.gif" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </items>
+                  </ToolBar>
+               </top>
+               <center>
+                  <SplitPane dividerPositions="0.35" BorderPane.alignment="CENTER">
+                     <items>
+                        <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab closable="false" text="Search &amp; Filter">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <top>
+                                                <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER" />
+                                             </top>
+                                          </BorderPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Untitled Tab 2">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                        <SplitPane dividerPositions="0.45660377358490567" orientation="VERTICAL" prefHeight="508.0" prefWidth="600.0">
+                           <items>
+                              <TextArea fx:id="newTab_TextArea" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" wrapText="true">
+                                 <font>
+                                    <Font name="Leelawadee UI" size="15.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </TextArea>
+                              <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT">
+                                 <columns>
+                                    <TableColumn editable="false" prefWidth="75.0" text="VERB" />
+                                    <TableColumn editable="false" prefWidth="75.0" text="GERUND" />
+                                 </columns>
+                              </TableView>
+                           </items>
+                        </SplitPane>
+                     </items>
+                  </SplitPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </content>
+   <graphic>
+      <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@media/fileIcon2.png" />
+         </image>
+      </ImageView>
+   </graphic>
+</Tab>

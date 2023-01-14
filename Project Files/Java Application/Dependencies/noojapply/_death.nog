@@ -1,0 +1,21 @@
+# NooJ V2
+#
+# Syntactic grammar
+#
+# Input Language is: en
+# Output Language is: en
+#
+# Special Characters: '=' '<' '>' '\' '"' ':' '+' '/' '#' ';'
+#
+# Special Start Rule: Main
+#
+
+Verbs = <die> | <perish> | <kill> | <assassinate> ;
+
+Nouns = <death> | <corpse> | funerals | <widower> ;
+
+Adjectives = fatal | deadly | mortal;
+
+Expressions = <kick> the bucket  | <buy> the farm;
+
+Main = :Verbs | :Nouns | :Adjectives | :Expressions ;

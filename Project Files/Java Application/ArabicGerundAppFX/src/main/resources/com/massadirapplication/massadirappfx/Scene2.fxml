@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.massadirapplication.massadirappfx.Scene2Controller">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TabPane fx:id="scene2TabPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" rotateGraphic="true" VBox.vgrow="ALWAYS">
+            <tabs>
+                <Tab closable="false" text="New File Scan">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                        <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox fx:id="dragDropOverlay" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" visible="false">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="TOP" prefHeight="411.0" prefWidth="408.0" text="DROP HERE" textAlignment="CENTER" wrapText="true">
+                                       <font>
+                                          <Font name="Leelawadee UI Semilight" size="32.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView blendMode="MULTIPLY" fitHeight="140.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@media/addCollectionIcon.gif" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </children></VBox>
+                                        <VBox fx:id="dragBox" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onDragDropped="#handleFileDroppedEvent" onDragExited="#handleDragExitedEvent" onDragOver="#handleFileOverEvent">
+                                            <children>
+                                                <BorderPane prefHeight="319.0" prefWidth="800.0">
+                                                    <center>
+                                                        <FlowPane fx:id="flowPane" alignment="CENTER" columnHalignment="CENTER" prefHeight="222.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                                                            <children>
+                                                                <ImageView fx:id="pdfIcon" fitHeight="140.0" fitWidth="140.0" layoutX="351.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@./media/pdfIcon.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                                <ImageView fx:id="txtIcon" fitHeight="140.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@./media/txtIcon.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                                <ImageView fx:id="docxIcon" fitHeight="140.0" fitWidth="140.0" layoutX="410.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@./media/docIcon.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </children>
+                                                        </FlowPane>
+                                                    </center>
+                                       <bottom>
+                                                        <Label fx:id="fileName" contentDisplay="TEXT_ONLY" prefHeight="100.0" prefWidth="408.0" text="Drag your PDF, Word (.docx), or Text  (.txt) file here or" textAlignment="CENTER" textFill="#005eff" wrapText="true" BorderPane.alignment="CENTER">
+                                                            <font>
+                                                                <Font name="Leelawadee UI Semilight" size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                       </bottom>
+                                                </BorderPane>
+                                                <HBox alignment="CENTER" prefHeight="89.0" prefWidth="800.0">
+                                                    <children>
+                                                        <Button fx:id="addFileButton" graphicTextGap="10.0" mnemonicParsing="false" onAction="#browseFiles" prefHeight="80.0" prefWidth="405.0" text="Select from your computer" textAlignment="CENTER" HBox.hgrow="NEVER">
+                                                            <font>
+                                                                <Font name="Leelawadee UI Semilight" size="20.0" />
+                                                            </font>
+                                                            <graphic>
+                                                                <ImageView blendMode="MULTIPLY" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@media/addFileIcon.gif" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                        </Button>
+                                          <Button fx:id="scanFileButton" contentDisplay="TOP" disable="true" graphicTextGap="0.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#scanFile" prefHeight="80.0" prefWidth="80.0" text="Scan" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Leelawadee UI Semilight" size="13.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView blendMode="MULTIPLY" fitHeight="39.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@media/scanFileIcon.gif" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                           </children>
+                        </StackPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/newFileIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                </Tab>
+                <Tab closable="false" text="New Text Scan">
+                    <content>
+                        <AnchorPane fx:id="textAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                 <center>
+                                                <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+                                                    <children>
+                                                        <TextArea fx:id="textArea" nodeOrientation="RIGHT_TO_LEFT" onMouseExited="#enableButton" prefHeight="291.0" prefWidth="562.0" promptText="                          أكتب أو إطبع نصك هنا.........Type or paste your text here" wrapText="true">
+                                                            <font>
+                                                                <Font name="Leelawadee UI" size="15.0" />
+                                                            </font>
+                                                            <cursor>
+                                                                <Cursor fx:constant="TEXT" />
+                                                            </cursor>
+                                                        </TextArea>
+                                                    </children>
+                                                </HBox>
+                                 </center>
+                                 <top>
+                                                <Label contentDisplay="TEXT_ONLY" prefHeight="107.0" prefWidth="573.0" text="Type or paste your text in the box below and press the button to scan it" textAlignment="CENTER" textFill="#005eff" wrapText="true" BorderPane.alignment="CENTER">
+                                                    <font>
+                                                        <Font name="Leelawadee UI Semilight" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                 </top>
+                              </BorderPane>
+                                          <HBox alignment="CENTER" prefHeight="149.0" prefWidth="800.0">
+                                              <children>
+                                                  <Button fx:id="scanTextButton" alignment="CENTER" defaultButton="true" graphicTextGap="10.0" mnemonicParsing="false" onAction="#scanText" prefHeight="80.0" prefWidth="405.0" text="Scan this text" textAlignment="CENTER" visible="false">
+                                                      <font>
+                                                          <Font name="Leelawadee UI Semilight" size="20.0" />
+                                                      </font>
+                                                      <graphic>
+                                                          <ImageView blendMode="MULTIPLY" fitHeight="39.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                              <image>
+                                                                  <Image url="@media/scanFileIcon.gif" />
+                                                              </image>
+                                                          </ImageView>
+                                                      </graphic>
+                                                  </Button>
+                                              </children>
+                                          </HBox>
+                           </children>
+                        </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/newTextIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                </Tab>
+            </tabs>
+        </TabPane>
+      <VBox alignment="BOTTOM_CENTER" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+         <children>
+              <ProgressBar fx:id="progressBar" maxHeight="10.0" maxWidth="1.7976931348623157E308" minHeight="10.0" prefHeight="10.0" progress="1.0" VBox.vgrow="ALWAYS" />
+              <HBox id="HBox" alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="NEVER">
+                  <children>
+                      <Label fx:id="leftStatus" maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Left status" HBox.hgrow="ALWAYS">
+                          <font>
+                              <Font size="11.0" />
+                          </font>
+                          <textFill>
+                              <Color red="0.625" green="0.625" blue="0.625" />
+                          </textFill>
+                      </Label>
+                      <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+                      <Label fx:id="rightStatus" maxWidth="-1.0" text="Right status" HBox.hgrow="NEVER" />
+                  </children>
+                  <padding>
+                      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </padding>
+              </HBox>
+         </children>
+      </VBox>
+    </children>
+</VBox>
